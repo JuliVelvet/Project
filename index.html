@@ -1,0 +1,101 @@
+<!doctype HTML>
+<html> 
+    <head>
+        <meta charset = "utf-8">
+        <link href = "index.css" rel="stylesheet">
+        <script src = "OpenCV/opencv.js">  </script>
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+        <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+        <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+
+    </head>
+
+        <body>
+          <video id="video" width = "224" height = "224"></video>
+          <video id="test" width = "224" height = "224"></video>
+
+
+          <canvas id="canvasFrame" width = "224" height = "224"> </canvas>
+          <canvas id="canvasoutput" width = "224" height = "224"> </canvas>
+            
+          <p id = "status"> 
+              Model: <span id = "StatusModel"> Model Loading</span>
+              Video Stream: <span id = "statusVideo"> Initalising </span>
+          </p>
+
+
+          <p>  
+            <input id= "txtLabel1" type="text" value="Upload 1"> 
+            <button id= "addLabel1"> Add training image </button>
+            <span id="numLabel1">0</span> Training images
+          </p>
+
+          <p>  
+               <input id= "txtLabel2" type="text" value="Upload 2"> 
+               <button id= "addLabel2"> Add training image </button>
+               <span id="numLabel2">0</span> Training images
+          </p>
+
+          <p>  
+              <input id= "txtLabel3" type="text" value="Upload 3"> 
+              <button id= "addLabel3"> Add training image </button>
+              <span id="numLabel3">0</span> Training images
+          </p>
+
+            <p>  
+              <input id= "txtLabel4" type="text" value="Upload 4"> 
+              <button id= "addLabel4"> Add training image </button>
+              <span id="numLabel4">0</span> Training images
+           </p>
+
+           <p>  
+              <input id= "txtLabel5" type="text" value="Upload 5"> 
+              <button id= "addLabel5"> Add training image </button>
+              <span id="numLabel5">0</span> Training images
+
+            </p>
+
+            <p>  
+              <input id= "txtLabel6" type="text" value="Upload 6"> 
+              <button id= "addLabel6"> Add training image </button>
+              <span id="numLabel6">0</span> Training images
+
+            </p>
+
+             <p>  
+              <input id= "txtLabel7" type="text" value="Upload 7"> 
+              <button id= "addLabel7"> Add training image </button>
+              <span id="numLabel7">0</span> Training images
+      
+            </p>
+
+            <p>
+                <button id="btnPredict"> Start Predicting</button>
+                <span id="lPrediction"> </span>
+            </p>
+
+            <p> 
+                <button id="btnTrain"> Train Model</button>
+                <span id="1b1Loss"> </span>
+
+            </p>
+
+
+            <p> 
+              <button id="CheckModel"> CheckModel</button>
+
+          </p>
+         
+        <script src="index.js"> </script>
+        <script src="classifier.js"> </script>
+        <script src="dataset.js"> </script>
+        <script src="ImageTransformation.js"> </script>
+
+        </body>
+    </html>
+    
+
+
+
+            
+    
